@@ -1,0 +1,39 @@
+body {
+  background-color: #fff;
+}
+
+.header-brand-img {
+  height: 4rem;
+  margin-right: 0rem;
+  width: auto;
+}
+
+@media (min-width: 992px) and (max-width: 1199px){
+  html:not([dir=rtl]) .ml-auto, html:not([dir=rtl]) .mx-auto {
+   margin-right: -5% !Important;
+   /* right: 0 !important; */
+  }
+  .header-img{
+    max-width: 95% !important;
+  }
+  }
+
+.navbar-toggler {
+  font-size: 1.2rem;
+}
+.navbar.bg-white .navbar-toggler {
+  color: #a3a4a6;
+  border: none;
+}
+
+#blog-subnav.subnav-fixed {
+  position: fixed !important;
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, .05), 0 1px 0 rgba(24, 28, 33, .04);
+          box-shadow: 0 0 10px rgba(0, 0, 0, .05), 0 1px 0 rgba(24, 28, 33, .04);
+}
+
+#blog-subnav.subnav-shown {
+  top: 0 !important;
+  width: 100%;
+  background: #fff;
+}

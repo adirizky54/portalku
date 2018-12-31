@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+
+<html lang="en" class="default-style">
+<head>
+  <title>Portal Billionaire Store</title>
+
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="IE=edge,chrome=1">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <meta name="theme-color" content="#dc2f2f">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+
+  <!-- Icon fonts -->
+  <link rel="stylesheet" href="assets/vendor/fonts/fontawesome.css">
+  <link rel="stylesheet" href="assets/vendor/fonts/ionicons.css">
+  <link rel="stylesheet" href="assets/vendor/fonts/linearicons.css">
+  <link rel="stylesheet" href="assets/vendor/fonts/pe-icon-7-stroke.css">
+   
+  <!-- Core stylesheets -->
+  <link rel="stylesheet" href="assets/vendor/css/bootstrap.css" class="theme-settings-bootstrap-css">
+  <link rel="stylesheet" href="assets/vendor/css/appwork.css" class="theme-settings-appwork-css">
+  <link rel="stylesheet" href="assets/vendor/css/theme-billy.css" class="theme-settings-theme-css">
+  <link rel="stylesheet" href="assets/vendor/css/colors.css" class="theme-settings-colors-css">
+  <link rel="stylesheet" href="assets/vendor/css/uikit.css">
+  
+  <!-- Core scripts -->
+  <script src="assets/vendor/js/pace.js"></script>
+
+  <!-- Page -->
+  <link rel="stylesheet" href="assets/css/portal.css">
+
+  <!-- Libs --> 
+  <link rel="stylesheet" href="assets/vendor/libs/jquery.simpleTicker/jquery.simpleTicker.css">
+  <link rel="stylesheet" href="assets/vendor/libs/swiper/swiper.css">
+  <style>
+    .demo3 {
+    position: relative;
+    padding: 0 0 0 80px;
+  }
+  </style>
+</head>
+<body>
+  <div class="page-loader">
+    <div class="bg-primary"></div>
+  </div>
+
+  <nav class="navbar navbar-expand-lg flex-column align-items-stretch bg-white shadow-sm" id="blog-subnav-wrapper">
+    
+    <div class="container flex-lg-wrap" id="blog-subnav">
+
+      <!-- top banner -->
+      <div class="navbar-nav align-items-lg-center order-lg-1 py-lg-1 ml-auto">
+          <img src="assets/img/banner-head.jpg" alt="" class="img-fluid header-img">
+      </div>
+
+      <!-- top logo -->
+      <a href="index.html" class="navbar-brand">
+        <img src="./assets/img/logo-portal.png" alt="Billionaire Store" class="header-brand-img">
+      </a>
+
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".header-8">
+        <span class="navbar-toggler-icon text-dark"></span>
+      </button>
+
+      <div class="header-8 navbar-collapse collapse col-lg-12 flex-wrap order-lg-2 px-0">
+        <hr class="d-none d-lg-block w-100 my-2">
+        <div class="navbar-nav">
+          <a class="nav-item nav-link text-uppercase font-weight-semibold mr-3 active" href="#">Home</a>
+          <a class="nav-item nav-link text-uppercase font-weight-semibold mr-3" href="#">Woman</a>
+          <a class="nav-item nav-link text-uppercase font-weight-semibold mr-3" href="#">Men</a>
+          <a class="nav-item nav-link text-uppercase font-weight-semibold mr-3" href="#">Kids</a>
+          <a class="nav-item nav-link text-uppercase font-weight-semibold mr-3" href="#">Sale</a>
+          <a class="nav-item nav-link text-uppercase font-weight-semibold mr-3" href="#">Blog</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container mt-4">
+    <div class="row mb-4">
+      <div class="col-lg-12">
+        <div class="bg-white rounded d-flex align-items-center">
+          <div class="p-2 px-3 bg-blue text-white font-weight-semibold rounded-left">Trending Now</div>
+          <div class="ml-3">
+            <ul class="list-unstyled m-0" id="news-trending">
+              <li>
+                <a href="javascript:void(0)" class="text-dark font-weight-semibold text-truncate" style="max-width: 150px;">Kiat Sukses Usaha Rumahan untuk Mompreneur: Keluarga Terurus, Bisnis Jalan Terus</a>
+              </li>
+              <li>
+                <a href="javascript:void(0)" class="text-dark font-weight-semibold text-truncate">Peluang Usaha Ibu Rumah Tangga yang Akan Booming di Tahun 2019</a>
+              </li>
+              <li>
+                <a href="javascript:void(0)" class="text-dark font-weight-semibold text-truncate" style="max-width: 150px;">Dongkrak Kinerja Karyawan Agar Menjadi Produktif dan Loyal</a>
+              </li>
+            </ul>
+          </div>          
+        </div>
+      </div>
+    </div>
+    <div class="row mb-4">
+      <div class="col-md-8 col-lg-9 col-xl-9">
+        <div class="swiper-container" id="swiper-artikel">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="card ui-bg-cover ui-bg-overlay-container border-0 mb-4 py-5" style="background-image: url('assets/img/bg/1.jpg');height:353px">
+                <div class="ui-bg-overlay bg-dark rounded opacity-50"></div>
+                <div class="card-body text-white p-5" style="bottom:0; position: absolute;">
+                  <a href="javascript:void(0)" class="badge badge-blue text-uppercase px-2">Marketplace</a>
+                  <h3 class="my-2">
+                    <a href="#" class="text-white line-height-condenced">Dongkrak Kinerja Karyawan Agar Menjadi Produktif dan Loyal</a>
+                  </h3>
+                  <div class="small">
+                    <a href="#" class="text-white font-weight-semibold">Adi Rizky</a>
+                    &nbsp;-&nbsp; 
+                    <span>31 Desember 2018</span>
+                    &nbsp; &nbsp;
+                    <a href="#" class="text-white"><span class="ion ion-md-chatboxes"></span> 12</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card ui-bg-cover ui-bg-overlay-container border-0 mb-4 py-5" style="background-image: url('assets/img/bg/2.jpg');height:320px">
+                <div class="ui-bg-overlay bg-dark rounded opacity-50"></div>
+                <div class="card-body text-white p-5" style="bottom:0; position: absolute;">
+                  <a href="javascript:void(0)" class="badge badge-blue text-uppercase px-2">Marketplace</a>
+                  <h3 class="my-2">
+                    <a href="#" class="text-white line-height-condenced">Dongkrak Kinerja Karyawan Agar Menjadi Produktif dan Loyal</a>
+                  </h3>
+                  <div class="small">
+                    <a href="#" class="text-white font-weight-semibold">Adi Rizky</a>
+                    &nbsp;-&nbsp; 
+                    <span>31 Desember 2018</span>
+                    &nbsp; &nbsp;
+                    <a href="#" class="text-white"><span class="ion ion-md-chatboxes"></span> 12</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-button-next custom-icon" style="font-size:2rem !important">
+            <i class="lnr lnr-chevron-right text-white"></i>
+          </div>
+          <div class="swiper-button-prev custom-icon" style="font-size:2rem !important">
+            <i class="lnr lnr-chevron-left text-white"></i>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 col-lg-3 col-xl-3">
+        <!-- <a href="#" class="d-block ui-bg-cover mb-3" style="background-image: url(/assets/img/bg/4.jpg); height: 150px;"></a> -->
+        <div class="row">
+          <div class="col-12 col-sm-6 col-md-12 col-lg-12 mb-3">
+            <a href="#">
+              <img src="assets/img/bg/1.jpg" alt="" class="img-fluid">
+            </a>
+          </div>
+          <div class="col-12 col-sm-6 col-md-12 col-lg-12 mb-3">
+            <a href="#">
+              <img src="assets/img/bg/1.jpg" alt="" class="img-fluid">
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row mb-4">
+      <div class="col-lg-4">
+        <div class="card ui-bg-cover ui-bg-overlay-container border-0 mb-4" style="background-image: url('/assets/img/bg/2.jpg');">
+          <div class="ui-bg-overlay bg-dark rounded opacity-50"></div>
+          <div class="card-body text-center text-white p-5">
+            <a href="javascript:void(0)" class="badge badge-blue text-uppercase px-2">Marketplace</a>
+            <h4 class="my-2">
+              <a href="#" class="text-white line-height-condenced">Dongkrak Kinerja Karyawan Agar Menjadi Produktif dan Loyal</a>
+            </h4>
+            <div class="small">
+              <a href="#" class="text-white font-weight-semibold">Adi Rizky</a>
+              &nbsp;-&nbsp;
+              <span>31 Desember 2018</span>
+              &nbsp; &nbsp;
+              <a href="#" class="text-white"><span class="ion ion-md-chatboxes"></span> 12</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4">
+        <div class="card ui-bg-cover ui-bg-overlay-container border-0 mb-4" style="background-image: url('/assets/img/bg/1.jpg');">
+          <div class="ui-bg-overlay bg-dark rounded opacity-50"></div>
+          <div class="card-body text-center text-white p-5">
+            <a href="javascript:void(0)" class="badge badge-blue text-uppercase px-2">Marketplace</a>
+            <h4 class="my-2">
+              <a href="#" class="text-white line-height-condenced">Dongkrak Kinerja Karyawan Agar Menjadi Produktif dan Loyal</a>
+            </h4>
+            <div class="small">
+              <a href="#" class="text-white font-weight-semibold">Adi Rizky</a>
+              &nbsp;-&nbsp;
+              <span>31 Desember 2018</span>
+              &nbsp; &nbsp;
+              <a href="#" class="text-white"><span class="ion ion-md-chatboxes"></span> 12</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4">
+        <div class="card ui-bg-cover ui-bg-overlay-container border-0 mb-4" style="background-image: url('/assets/img/bg/3.jpg');">
+          <div class="ui-bg-overlay bg-dark rounded opacity-50"></div>
+          <div class="card-body text-center text-white p-5">
+            <a href="javascript:void(0)" class="badge badge-blue text-uppercase px-2">Marketplace</a>
+            <h4 class="my-2">
+              <a href="#" class="text-white line-height-condenced">Dongkrak Kinerja Karyawan Agar Menjadi Produktif dan Loyal</a>
+            </h4>
+            <div class="small">
+              <a href="#" class="text-white font-weight-semibold">Adi Rizky</a>
+              &nbsp;-&nbsp;
+              <span>31 Desember 2018</span>
+              &nbsp; &nbsp;
+              <a href="#" class="text-white"><span class="ion ion-md-chatboxes"></span> 12</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-8">
+        <div class="mb-3" id="title-wrap">
+          <h5 class="text-uppercase font-weight-bold">Latest Article</h5>
+          <hr class="bg-light">
+        </div>
+        <ul class="list-unstyled">
+          <li class="media mb-4">
+            <a href="#">
+              <picture class="mr-3">
+                <source media="(min-width: 768px)" srcset="assets/img/150.png">
+                <img src="assets/img/100.png" alt="Flowers" class="img-fluid">
+              </picture>
+            </a>            
+            <div class="media-body">
+              <h5 class="mt-0 mb-1">
+                <a href="#" class="text-dark font-weight-bold">Lorem Ipsum</a>
+              </h5>
+              <div class="small my-2">
+                <a href="#" class="text-dark font-weight-bold">Adi Rizky</a>
+                &nbsp;-&nbsp;
+                <span class="text-muted">31 Desember 2018</span>
+              </div>
+              <p class="opacity-75 d-none d-md-block">
+                Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+              </p>              
+            </div>  
+          </li>
+          <li class="media mb-4">
+            <a href="#">
+              <picture class="mr-3">
+                <source media="(min-width: 768px)" srcset="assets/img/150.png">
+                <img src="assets/img/100.png" alt="Flowers" class="img-fluid">
+              </picture>
+            </a>            
+            <div class="media-body">
+              <h5 class="mt-0 mb-1">
+                <a href="#" class="text-dark font-weight-bold">Lorem Ipsum</a>
+              </h5>
+              <div class="small my-2">
+                <a href="#" class="text-dark font-weight-bold">Adi Rizky</a>
+                &nbsp;-&nbsp;
+                <span class="text-muted">31 Desember 2018</span>
+              </div>
+              <p class="opacity-75 d-none d-md-block">
+                Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+              </p>              
+            </div>  
+          </li>
+          <li class="media mb-4">
+            <a href="#">
+              <picture class="mr-3">
+                <source media="(min-width: 768px)" srcset="assets/img/150.png">
+                <img src="assets/img/100.png" alt="Flowers" class="img-fluid">
+              </picture>
+            </a>            
+            <div class="media-body">
+              <h5 class="mt-0 mb-1">
+                <a href="#" class="text-dark font-weight-bold">Lorem Ipsum</a>
+              </h5>
+              <div class="small my-2">
+                <a href="#" class="text-dark font-weight-bold">Adi Rizky</a>
+                &nbsp;-&nbsp;
+                <span class="text-muted">31 Desember 2018</span>
+              </div>
+              <p class="opacity-75 d-none d-md-block">
+                Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+              </p>              
+            </div>  
+          </li>
+          <li class="media mb-4">
+            <a href="#">
+              <picture class="mr-3">
+                <source media="(min-width: 768px)" srcset="assets/img/150.png">
+                <img src="assets/img/100.png" alt="Flowers" class="img-fluid">
+              </picture>
+            </a>            
+            <div class="media-body">
+              <h5 class="mt-0 mb-1">
+                <a href="#" class="text-dark font-weight-bold">Lorem Ipsum</a>
+              </h5>
+              <div class="small my-2">
+                <a href="#" class="text-dark font-weight-bold">Adi Rizky</a>
+                &nbsp;-&nbsp;
+                <span class="text-muted">31 Desember 2018</span>
+              </div>
+              <p class="opacity-75 d-none d-md-block">
+                Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+              </p>              
+            </div>  
+          </li>
+          <li class="media mb-4">
+            <a href="#">
+              <picture class="mr-3">
+                <source media="(min-width: 768px)" srcset="assets/img/150.png">
+                <img src="assets/img/100.png" alt="Flowers" class="img-fluid">
+              </picture>
+            </a>            
+            <div class="media-body">
+              <h5 class="mt-0 mb-1">
+                <a href="#" class="text-dark font-weight-bold">Lorem Ipsum</a>
+              </h5>
+              <div class="small my-2">
+                <a href="#" class="text-dark font-weight-bold">Adi Rizky</a>
+                &nbsp;-&nbsp;
+                <span class="text-muted">31 Desember 2018</span>
+              </div>
+              <p class="opacity-75 d-none d-md-block">
+                Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+              </p>              
+            </div>  
+          </li>
+          <li class="media mb-4">
+            <a href="#">
+              <picture class="mr-3">
+                <source media="(min-width: 768px)" srcset="assets/img/150.png">
+                <img src="assets/img/100.png" alt="Flowers" class="img-fluid">
+              </picture>
+            </a>            
+            <div class="media-body">
+              <h5 class="mt-0 mb-1">
+                <a href="#" class="text-dark font-weight-bold">Lorem Ipsum</a>
+              </h5>
+              <div class="small my-2">
+                <a href="#" class="text-dark font-weight-bold">Adi Rizky</a>
+                &nbsp;-&nbsp;
+                <span class="text-muted">31 Desember 2018</span>
+              </div>
+              <p class="opacity-75 d-none d-md-block">
+                Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+              </p>              
+            </div>  
+          </li>
+          <li class="media mb-4">
+            <a href="#">
+              <picture class="mr-3">
+                <source media="(min-width: 768px)" srcset="assets/img/150.png">
+                <img src="assets/img/100.png" alt="Flowers" class="img-fluid">
+              </picture>
+            </a>            
+            <div class="media-body">
+              <h5 class="mt-0 mb-1">
+                <a href="#" class="text-dark font-weight-bold">Lorem Ipsum</a>
+              </h5>
+              <div class="small my-2">
+                <a href="#" class="text-dark font-weight-bold">Adi Rizky</a>
+                &nbsp;-&nbsp;
+                <span class="text-muted">31 Desember 2018</span>
+              </div>
+              <p class="opacity-75 d-none d-md-block">
+                Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+              </p>              
+            </div>  
+          </li>
+        </ul>
+        <ul class="pagination mb-4">
+          <li class="page-item disabled">
+            <a class="page-link" href="javascript:void(0)">«</a>
+          </li>
+          <li class="page-item active">
+            <a class="page-link" href="javascript:void(0)">1</a>
+          </li>
+          <li class="page-item">
+            <a class="page-link" href="javascript:void(0)">2</a>
+          </li>
+          <li class="page-item">
+            <a class="page-link" href="javascript:void(0)">3</a>
+          </li>
+          <li class="page-item">
+            <a class="page-link" href="javascript:void(0)">4</a>
+          </li>
+          <li class="page-item">
+            <a class="page-link" href="javascript:void(0)">5</a>
+          </li>
+          <li class="page-item">
+            <a class="page-link" href="javascript:void(0)">»</a>
+          </li>
+        </ul>
+      </div>
+      <div class="col-lg-4">
+        <div class="row justify-content-center no-gutters text-center mb-4" id="wrapper">
+          <div class="col-4">
+            <a href="#" class="text-white justify-content-center">
+              <div class="bg-facebook p-1 py-3 item facebook">              
+                <i class="fab fa-facebook-f mb-2" style="font-size:20px"></i><br/>
+                <span class="font-weight-bold h5 count"></span><br/>
+                Fans              
+              </div>
+            </a>
+          </div>
+          <div class="col-4">
+            <a href="#" class="text-white justify-content-center">
+              <div class="bg-instagram p-1 py-3 item instagram">                
+                <i class="fab fa-instagram mb-2" style="font-size:20px"></i><br/>
+                <span class="font-weight-bold h5 count"></span><br/>
+                Follower
+              </div>
+            </a>
+          </div>
+          <div class="col-4">
+            <a href="#" class="text-white justify-content-center">
+              <div class="bg-danger p-1 py-3 item instagram">              
+                <i class="fab fa-youtube mb-2" style="font-size:20px"></i><br/>
+                <span class="font-weight-semibold h5 count"></span><br/>
+                Subscibers              
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="row mb-4">
+          <div class="col-12">
+            <img src="assets/img/bg/1.jpg" alt="" class="img-fluid">
+          </div>
+        </div>
+        <div class="row mb-4">
+          <div class="col-12">
+            <div class="mb-3" id="title-wrap">
+              <h5 class="text-uppercase font-weight-bold">Most Popular</h5>
+              <hr class="bg-light">
+            </div>
+            <ul class="list-unstyled">
+              <li class="media mb-4">
+                <a href="#">
+                  <img src="assets/img/bg/1.jpg" class="img-fluid mr-3" alt="..." style="height:70px; width:100px">
+                </a>            
+                <div class="media-body">
+                  <h6 class="mt-0 mb-1">
+                    <a href="#" class="text-dark line-height-condenced">Kuis Berhadiah HP Dengan Ceritakan Resolusi 2019 Anda</a>
+                  </h6>
+                  <div class="small my-2">
+                    <span class="text-muted">31 Desember 2018</span>
+                  </div>
+                  <p>          
+                </div>  
+              </li>
+              <li class="media mb-4">
+                <a href="#">
+                  <img src="assets/img/bg/1.jpg" class="img-fluid mr-3" alt="..." style="height:70px; width:100px">
+                </a>            
+                <div class="media-body">
+                  <h6 class="mt-0 mb-1">
+                    <a href="#" class="text-dark line-height-condenced">Ini Lho, Rahasia Pengusaha Sukses Dunia yang Sering Anda Lewatkan!</a>
+                  </h6>
+                  <div class="small my-2">
+                    <span class="text-muted">31 Desember 2018</span>
+                  </div>
+                  <p>          
+                </div>  
+              </li>
+              <li class="media mb-4">
+                <a href="#">
+                  <img src="assets/img/bg/1.jpg" class="img-fluid mr-3" alt="..." style="height:70px; width:100px">
+                </a>            
+                <div class="media-body">
+                  <h6 class="mt-0 mb-1">
+                    <a href="#" class="text-dark line-height-condenced">Cara Buka Toko di Shopee dan Trik Mendatangkan Omset Berlipat</a>
+                  </h6>
+                  <div class="small my-2">
+                    <span class="text-muted">31 Desember 2018</span>
+                  </div>
+                  <p>          
+                </div>  
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="row mb-4">
+          <div class="col-12">
+            <div class="mb-3" id="title-wrap">
+              <h5 class="text-uppercase font-weight-bold">Hot News</h5>
+              <hr class="bg-light">
+            </div>
+            <div class="row">
+              <div class="col-6 col-sm-6 col-md-6 col-lg-6 mb-4">
+                <a href="#">
+                  <img src="assets/img/bg/1.jpg" alt="" class="img-fluid mb-2">
+                  <span class="text-dark font-weight-semibold">Gaji Kecil? Tanggulangi Dengan 6 Pekerjaan Sampingan Ini</span>
+                </a>
+              </div>
+              <div class="col-6 col-sm-6 col-md-6 col-lg-6 mb-4">
+                <a href="#">
+                  <img src="assets/img/bg/1.jpg" alt="" class="img-fluid mb-2">
+                  <span class="text-dark font-weight-semibold">Keunggulan Bisnis Dropship untuk Mahasiswa dan Pemula</span>
+                </a>
+              </div>
+              <div class="col-6 col-sm-6 col-md-6 col-lg-6 mb-4">
+                <a href="#">
+                  <img src="assets/img/bg/1.jpg" alt="" class="img-fluid mb-2">
+                  <span class="text-dark font-weight-semibold">Belajar Desain Grafis yang Bagus Buat Penjualan Makin Mulus</span>
+                </a>
+              </div>
+              <div class="col-6 col-sm-6 col-md-6 col-lg-6 mb-4">
+                <a href="#">
+                  <img src="assets/img/bg/1.jpg" alt="" class="img-fluid mb-2">
+                  <span class="text-dark font-weight-semibold">Kegiatan Ibu Rumah Tangga yang Ternyata Bisa Bikin Kaya</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="bg-dark text-white mt-4">
+    <div class="container py-2">
+      <div>© 2018 Portal Billionaire Store</div>
+    </div>
+  </div>
+
+  <!-- Core scripts -->
+  <script src="assets/vendor/libs/jquery/jquery-3.3.1.min.js"></script>
+  <script src="assets/vendor/libs/popper/popper.js"></script>
+  <script src="assets/vendor/js/bootstrap.js"></script>
+
+<!-- blog js - scroll nav -->
+<script src="assets/js/blog.js"></script>
+
+  <script src="assets/vendor/libs/minimal-ticker/inewsticker.js"></script>
+  <script src="assets/vendor/libs/swiper/swiper.js"></script>
+  <script src="https://socialcounters.000webhostapp.com/SocialCounters/SocialCounters/js/api.js"></script>
+
+  <script>
+    $('#news-trending').inewsticker({
+      speed       : 5000,
+      effect      : 'slide',
+      dir         : 'ltr',
+      delay_after : 5000		
+    });
+    var swiperbanner = new Swiper('#swiper-artikel', {
+      loop: true,
+      // autoplay: {
+      //   delay: 5000
+      // },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev'
+      }
+    });
+    $('#wrapper').SocialCounter({
+    //Get Usernames
+    facebook_user: 'envato',
+    instagram_user: 'mycss_net',
+    instagram_user_sandbox: 'mycss_net',
+    youtube_user: 'envato',
+    //Get Access Tokens,keys,client_ids
+    instagram_token:'3216680391.5a20414.d66b30dc0857473dbf9723d34b502a73',
+    facebook_token:'1627334644211864|3_tGe7MNSzumVcKxMyJUTqZAlz4',
+    youtube_key:'AIzaSyDXpwzqSs41Kp9IZj49efV3CSrVxUDAwS0',    
+    });
+  </script>
+</body>
+</html>
