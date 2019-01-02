@@ -3,9 +3,30 @@ body {
 }
 
 .header-brand-img {
-  height: 4rem;
+  height: 2.5rem;
   margin-right: 0rem;
   width: auto;
+}
+
+@media (min-width: 576px){
+  .header-brand-img {
+    height: 3rem;
+  }  
+}
+
+@media (min-width: 768px){
+  .header-brand-img {
+    height: 3.2rem;
+  }
+  #logo-image .header-brand-img {
+    height: 2.5rem;
+  }
+}
+
+@media (min-width: 992px){
+  .header-brand-img {
+    height: 3.8rem;
+  }  
 }
 
 .image-slider {
@@ -37,32 +58,84 @@ body {
 }
 
 @media (min-width: 992px) and (max-width: 1199px){
-  html:not([dir=rtl]) .ml-auto, html:not([dir=rtl]) .mx-auto {
-   margin-right: -5% !Important;
-   /* right: 0 !important; */
+  #top-banner.ml-auto {
+   margin-right: -4% !Important;
   }
   .header-img{
     max-width: 95% !important;
   }
-  }
-
-.navbar-toggler {
-  font-size: 1.2rem;
 }
-.navbar.bg-white .navbar-toggler {
+
+.navbar-toggler-icon {
+  font-size: 0.9rem;
+}
+
+.navbar .navbar-toggler {
   color: #a3a4a6;
   border: none;
 }
 
-#blog-subnav.subnav-fixed {
-  position: fixed !important;
-  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, .05), 0 1px 0 rgba(24, 28, 33, .04);
-          box-shadow: 0 0 10px rgba(0, 0, 0, .05), 0 1px 0 rgba(24, 28, 33, .04);
+#navbar-top {
+  white-space: nowrap;
+  -webkit-overflow-scrolling: touch;
 }
 
-#blog-subnav.subnav-shown {
-  padding: 10px 100px;
-  top: 0 !important;
-  width: 98%;
-  background: #fff;
+@media (min-width: 768px){
+  #portal-subnav-wrapper {
+    position: relative;
+  }
+
+  #portal-subnav {
+    position: static !important;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 20;
+  }
+
+  #portal-subnav.subnav-fixed {
+    position: fixed !important;
+    -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, .05), 0 1px 0 rgba(24, 28, 33, .04);
+            box-shadow: 0 0 10px rgba(0, 0, 0, .05), 0 1px 0 rgba(24, 28, 33, .04);
+    -webkit-transition: top .3s;
+            transition: top .3s;
+  }
+
+  #portal-subnav.subnav-shown {
+    top: 0 !important;
+  }
+
+  #navbar-top {
+    width: 470px
+  }
+
+  .subnav-fixed.subnav-shown #navbar-top {
+    width: 340px
+  }
+}
+
+@media (min-width: 992px){
+  #navbar-top {
+    width: 670px
+  }
+
+  .subnav-fixed.subnav-shown #navbar-top {
+    width: 540px
+  }
+}
+
+@media (min-width: 1200px){
+  #navbar-top {
+    width: 860px
+  }
+
+  .subnav-fixed.subnav-shown #navbar-top {
+    width: 710px
+  }
+}
+
+@media (max-width: 767px){
+  #title-berita {
+    font-size: 1.12rem;
+  }
 }

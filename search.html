@@ -20,7 +20,6 @@
   <link rel="stylesheet" href="assets/vendor/fonts/fontawesome.css">
   <link rel="stylesheet" href="assets/vendor/fonts/ionicons.css">
   <link rel="stylesheet" href="assets/vendor/fonts/linearicons.css">
-  <link rel="stylesheet" href="assets/vendor/fonts/pe-icon-7-stroke.css">
    
   <!-- Core stylesheets -->
   <link rel="stylesheet" href="assets/vendor/css/bootstrap.css" class="theme-settings-bootstrap-css">
@@ -36,6 +35,7 @@
   <link rel="stylesheet" href="assets/css/portal.css">
 
   <!-- Libs -->
+  <link rel="stylesheet" href="assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.css">
   <link rel="stylesheet" href="assets/vendor/libs/bootstrap-select/bootstrap-select.css">
 </head>
 <body>
@@ -43,37 +43,87 @@
     <div class="bg-primary"></div>
   </div>
 
-  <nav class="navbar navbar-expand-lg flex-column align-items-stretch bg-white shadow-sm">
-    
-    <div class="container flex-lg-wrap">
+  <div class="shadow-sm">
+    <!-- Top Nav -->
+    <div id="portal-nav-wrapper" class="">
+      <nav id="portal-nav" class="navbar navbar-expand-md flex-column align-items-stretch bg-white">
+        <div class="container flex-lg-wrap">
+          <!-- top banner -->
+          <div class="navbar-nav align-items-md-center order-md-1 py-lg-1 ml-auto mb-2 mb-md-0 d-block" id="top-banner">
+            <img src="assets/img/banner-head.jpg" alt="" class="img-fluid header-img">
+          </div>
 
-      <!-- top banner -->
-      <div class="navbar-nav align-items-lg-center order-lg-1 py-lg-1 ml-auto">
-          <img src="assets/img/banner-head.jpg" alt="" class="img-fluid header-img">
-      </div>
+          <!-- top logo -->
+          <a href="index.html" class="navbar-brand py-0">
+            <img src="./assets/img/logo-portal.png" alt="Billionaire Store" class="header-brand-img">
+          </a>
 
-      <!-- top logo -->
-      <a href="index.html" class="navbar-brand">
-        <img src="./assets/img/logo-portal.png" alt="Billionaire Store" class="header-brand-img">
-      </a>
-
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".header-8">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="header-8 navbar-collapse collapse col-lg-12 flex-wrap order-lg-2 px-0">
-        <hr class="d-none d-lg-block w-100 my-2">
-        <div class="navbar-nav">
-          <a class="nav-item nav-link text-uppercase font-weight-semibold mr-3 active" href="#">Home</a>
-          <a class="nav-item nav-link text-uppercase font-weight-semibold mr-3" href="#">Woman</a>
-          <a class="nav-item nav-link text-uppercase font-weight-semibold mr-3" href="#">Men</a>
-          <a class="nav-item nav-link text-uppercase font-weight-semibold mr-3" href="#">Kids</a>
-          <a class="nav-item nav-link text-uppercase font-weight-semibold mr-3" href="#">Sale</a>
-          <a class="nav-item nav-link text-uppercase font-weight-semibold mr-3" href="#">Blog</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".header-8">
+            <span class="navbar-toggler-icon"></span>
+          </button>
         </div>
-      </div>
+      </nav>
+    </div>    
+    <!-- Top Nav -->
 
+    <!-- Subnav -->
+    <div id="portal-subnav-wrapper">
+      <nav id="portal-subnav" class="navbar navbar-expand-md bg-white py-0 py-md-2">
+        <div class="container">
+          <a href="index.html" class="nav-item d-none mr-3" id="logo-image">
+            <img src="./assets/img/logo-portal.png" alt="Billionaire Store" class="header-brand-img">
+          </a>
+          <div class="header-8 navbar-collapse collapse col-lg-12 flex-wrap px-0">
+            <div class="navbar-nav ml-auto align-items-md-center order-2">
+              <label class="nav-item nav-link navbar-search-box">
+                <i class="ion ion-ios-search navbar-icon align-middle"></i>
+                <span class="navbar-search-input">
+                  <input type="text" class="form-control mx-2" placeholder="Cari Berita..." style="width:140px">
+                  <a href="#" class="navbar-search-cancel">×</a>
+                </span>
+              </label>
+            </div>
+            <ul class="navbar-nav align-items-start align-items-md-center order-1" id="navbar-top">
+              <li class="nav-item active mr-1">
+                <a class="nav-link text-uppercase font-weight-semibold" href="kategori.html">News</a>
+              </li>
+              <li class="nav-item mr-1">
+                <a class="nav-link text-uppercase font-weight-semibold" href="kategori.html">Bisnis</a>
+              </li>
+              <li class="nav-item mr-1">
+                <a class="nav-link text-uppercase font-weight-semibold" href="kategori.html">Tips and trick</a>
+              </li>
+              <li class="nav-item mr-1">
+                <a class="nav-link text-uppercase font-weight-semibold" href="kategori.html">Tips and trick</a>
+              </li>
+              <li class="nav-item mr-1">
+                <a class="nav-link text-uppercase font-weight-semibold" href="kategori.html">Tips and trick</a>
+              </li>
+              <li class="nav-item mr-1 dropdown">
+                <a class="nav-link text-uppercase font-weight-semibold dropdown-toggle" href="#" data-toggle="dropdown">
+                  Social Media
+                </a>
+                <div class="dropdown-menu dropdown-menu-right">
+                  <a class="dropdown-item" href="kategori.html">Facebook Marketing</a>
+                  <a class="dropdown-item" href="kategori.html">Instagram Marketing</a>
+                </div>
+              </li>
+              <li class="nav-item mr-1 dropdown">
+                <a class="nav-link text-uppercase font-weight-semibold dropdown-toggle" href="#" data-toggle="dropdown">
+                  Lainnya
+                </a>
+                <div class="dropdown-menu dropdown-menu-right">
+                  <a class="dropdown-item" href="kategori.html">Marketplace</a>
+                  <a class="dropdown-item" href="kategori.html">Produk</a>
+                </div>
+              </li>
+            </ul>            
+          </div>
+        </div>
+      </nav>
     </div>
-  </nav>
+    <!-- / Subnav -->
+  </div>
 
   <div class="container mt-4">
     <div class="row mb-4">
@@ -101,16 +151,16 @@
         </form>
         <ul class="list-unstyled">
           <li class="media mb-4">
-            <a href="#">
+            <a href="detail-berita.html">
               <picture class="mr-3">
                 <source media="(min-width: 768px)" srcset="assets/img/150.png">
                 <img src="assets/img/100.png" alt="Flowers" class="img-fluid">
               </picture>
             </a>            
             <div class="media-body">
-              <h5 class="mt-0 mb-1">
-                <a href="#" class="text-dark font-weight-bold">Lorem Ipsum</a>
-              </h5>
+              <a href="detail-berita.html" class="text-dark">
+                <h4 class="font-weight-normal mb-1" id="title-berita">Lorem Ipsum</h4>
+              </a>
               <div class="small my-2">
                 <a href="#" class="text-dark font-weight-bold">Adi Rizky</a>
                 &nbsp;-&nbsp;
@@ -122,16 +172,16 @@
             </div>  
           </li>
           <li class="media mb-4">
-            <a href="#">
+            <a href="detail-berita.html">
               <picture class="mr-3">
                 <source media="(min-width: 768px)" srcset="assets/img/150.png">
                 <img src="assets/img/100.png" alt="Flowers" class="img-fluid">
               </picture>
             </a>            
             <div class="media-body">
-              <h5 class="mt-0 mb-1">
-                <a href="#" class="text-dark font-weight-bold">Lorem Ipsum</a>
-              </h5>
+              <a href="detail-berita.html" class="text-dark">
+                <h4 class="font-weight-normal mb-1" id="title-berita">Lorem Ipsum</h4>
+              </a>
               <div class="small my-2">
                 <a href="#" class="text-dark font-weight-bold">Adi Rizky</a>
                 &nbsp;-&nbsp;
@@ -143,16 +193,16 @@
             </div>  
           </li>
           <li class="media mb-4">
-            <a href="#">
+            <a href="detail-berita.html">
               <picture class="mr-3">
                 <source media="(min-width: 768px)" srcset="assets/img/150.png">
                 <img src="assets/img/100.png" alt="Flowers" class="img-fluid">
               </picture>
             </a>            
             <div class="media-body">
-              <h5 class="mt-0 mb-1">
-                <a href="#" class="text-dark font-weight-bold">Lorem Ipsum</a>
-              </h5>
+              <a href="detail-berita.html" class="text-dark">
+                <h4 class="font-weight-normal mb-1" id="title-berita">Lorem Ipsum</h4>
+              </a>
               <div class="small my-2">
                 <a href="#" class="text-dark font-weight-bold">Adi Rizky</a>
                 &nbsp;-&nbsp;
@@ -164,16 +214,16 @@
             </div>  
           </li>
           <li class="media mb-4">
-            <a href="#">
+            <a href="detail-berita.html">
               <picture class="mr-3">
                 <source media="(min-width: 768px)" srcset="assets/img/150.png">
                 <img src="assets/img/100.png" alt="Flowers" class="img-fluid">
               </picture>
             </a>            
             <div class="media-body">
-              <h5 class="mt-0 mb-1">
-                <a href="#" class="text-dark font-weight-bold">Lorem Ipsum</a>
-              </h5>
+              <a href="detail-berita.html" class="text-dark">
+                <h4 class="font-weight-normal mb-1" id="title-berita">Lorem Ipsum</h4>
+              </a>
               <div class="small my-2">
                 <a href="#" class="text-dark font-weight-bold">Adi Rizky</a>
                 &nbsp;-&nbsp;
@@ -185,16 +235,16 @@
             </div>  
           </li>
           <li class="media mb-4">
-            <a href="#">
+            <a href="detail-berita.html">
               <picture class="mr-3">
                 <source media="(min-width: 768px)" srcset="assets/img/150.png">
                 <img src="assets/img/100.png" alt="Flowers" class="img-fluid">
               </picture>
             </a>            
             <div class="media-body">
-              <h5 class="mt-0 mb-1">
-                <a href="#" class="text-dark font-weight-bold">Lorem Ipsum</a>
-              </h5>
+              <a href="detail-berita.html" class="text-dark">
+                <h4 class="font-weight-normal mb-1" id="title-berita">Lorem Ipsum</h4>
+              </a>
               <div class="small my-2">
                 <a href="#" class="text-dark font-weight-bold">Adi Rizky</a>
                 &nbsp;-&nbsp;
@@ -206,16 +256,16 @@
             </div>  
           </li>
           <li class="media mb-4">
-            <a href="#">
+            <a href="detail-berita.html">
               <picture class="mr-3">
                 <source media="(min-width: 768px)" srcset="assets/img/150.png">
                 <img src="assets/img/100.png" alt="Flowers" class="img-fluid">
               </picture>
             </a>            
             <div class="media-body">
-              <h5 class="mt-0 mb-1">
-                <a href="#" class="text-dark font-weight-bold">Lorem Ipsum</a>
-              </h5>
+              <a href="detail-berita.html" class="text-dark">
+                <h4 class="font-weight-normal mb-1" id="title-berita">Lorem Ipsum</h4>
+              </a>
               <div class="small my-2">
                 <a href="#" class="text-dark font-weight-bold">Adi Rizky</a>
                 &nbsp;-&nbsp;
@@ -227,16 +277,16 @@
             </div>  
           </li>
           <li class="media mb-4">
-            <a href="#">
+            <a href="detail-berita.html">
               <picture class="mr-3">
                 <source media="(min-width: 768px)" srcset="assets/img/150.png">
                 <img src="assets/img/100.png" alt="Flowers" class="img-fluid">
               </picture>
             </a>            
             <div class="media-body">
-              <h5 class="mt-0 mb-1">
-                <a href="#" class="text-dark font-weight-bold">Lorem Ipsum</a>
-              </h5>
+              <a href="detail-berita.html" class="text-dark">
+                <h4 class="font-weight-normal mb-1" id="title-berita">Lorem Ipsum</h4>
+              </a>
               <div class="small my-2">
                 <a href="#" class="text-dark font-weight-bold">Adi Rizky</a>
                 &nbsp;-&nbsp;
@@ -315,45 +365,48 @@
             </div>
             <ul class="list-unstyled">
               <li class="media mb-4">
-                <a href="#">
-                  <img src="assets/img/bg/1.jpg" class="img-fluid mr-3" alt="..." style="height:70px; width:100px">
+                <a href="detail-berita.html">
+                  <img src="assets/img/100.png" class="img-fluid mr-3" alt="..." style="height:70px; width:100px">
                 </a>            
                 <div class="media-body">
-                  <h6 class="mt-0 mb-1">
-                    <a href="#" class="text-dark line-height-condenced">Kuis Berhadiah HP Dengan Ceritakan Resolusi 2019 Anda</a>
-                  </h6>
+                  <a href="detail-berita.html" class="text-dark">
+                    <h6 class="line-height-condenced mb-1">
+                      Kuis Berhadiah HP Dengan Ceritakan Resolusi 2019 Anda
+                    </h6>
+                  </a>                  
                   <div class="small my-2">
                     <span class="text-muted">31 Desember 2018</span>
-                  </div>
-                  <p>          
+                  </div>    
                 </div>  
               </li>
               <li class="media mb-4">
-                <a href="#">
-                  <img src="assets/img/bg/1.jpg" class="img-fluid mr-3" alt="..." style="height:70px; width:100px">
+                <a href="detail-berita.html">
+                  <img src="assets/img/100.png" class="img-fluid mr-3" alt="..." style="height:70px; width:100px">
                 </a>            
                 <div class="media-body">
-                  <h6 class="mt-0 mb-1">
-                    <a href="#" class="text-dark line-height-condenced">Ini Lho, Rahasia Pengusaha Sukses Dunia yang Sering Anda Lewatkan!</a>
-                  </h6>
+                  <a href="detail-berita.html" class="text-dark">
+                    <h6 class="line-height-condenced mb-1">
+                      Kuis Berhadiah HP Dengan Ceritakan Resolusi 2019 Anda
+                    </h6>
+                  </a>                  
                   <div class="small my-2">
                     <span class="text-muted">31 Desember 2018</span>
-                  </div>
-                  <p>          
+                  </div>    
                 </div>  
               </li>
               <li class="media mb-4">
-                <a href="#">
-                  <img src="assets/img/bg/1.jpg" class="img-fluid mr-3" alt="..." style="height:70px; width:100px">
+                <a href="detail-berita.html">
+                  <img src="assets/img/100.png" class="img-fluid mr-3" alt="..." style="height:70px; width:100px">
                 </a>            
                 <div class="media-body">
-                  <h6 class="mt-0 mb-1">
-                    <a href="#" class="text-dark line-height-condenced">Cara Buka Toko di Shopee dan Trik Mendatangkan Omset Berlipat</a>
-                  </h6>
+                  <a href="detail-berita.html" class="text-dark">
+                    <h6 class="line-height-condenced mb-1">
+                      Kuis Berhadiah HP Dengan Ceritakan Resolusi 2019 Anda
+                    </h6>
+                  </a>                  
                   <div class="small my-2">
                     <span class="text-muted">31 Desember 2018</span>
-                  </div>
-                  <p>          
+                  </div>    
                 </div>  
               </li>
             </ul>
@@ -366,28 +419,28 @@
               <hr class="bg-light">
             </div>
             <div class="row">
-              <div class="col-6 mb-4">
-                <a href="#" class="text-dark font-weight-semibold">
+              <div class="col-6 col-sm-6 col-md-6 col-lg-6 mb-4">
+                <a href="#" class="text-dark">
                   <img src="assets/img/bg/1.jpg" alt="" class="img-fluid mb-2">
-                  <span>Gaji Kecil? Tanggulangi Dengan 6 Pekerjaan Sampingan Ini</span>
+                  <span class="font-weight-semibold">Gaji Kecil? Tanggulangi Dengan 6 Pekerjaan Sampingan Ini</span>
                 </a>
               </div>
-              <div class="col-6 mb-4">
-                <a href="#" class="text-dark font-weight-semibold">
+              <div class="col-6 col-sm-6 col-md-6 col-lg-6 mb-4">
+                <a href="#" class="text-dark">
                   <img src="assets/img/bg/1.jpg" alt="" class="img-fluid mb-2">
-                  <span>Keunggulan Bisnis Dropship untuk Mahasiswa dan Pemula</span>
+                  <span class="font-weight-semibold">Keunggulan Bisnis Dropship untuk Mahasiswa dan Pemula</span>
                 </a>
               </div>
-              <div class="col-6 mb-4">
-                <a href="#" class="text-dark font-weight-semibold">
+              <div class="col-6 col-sm-6 col-md-6 col-lg-6 mb-4">
+                <a href="#" class="text-dark">
                   <img src="assets/img/bg/1.jpg" alt="" class="img-fluid mb-2">
-                  <span>Belajar Desain Grafis yang Bagus Buat Penjualan Makin Mulus</span>
+                  <span class="font-weight-semibold">Belajar Desain Grafis yang Bagus Buat Penjualan Makin Mulus</span>
                 </a>
               </div>
-              <div class="col-6 mb-4">
-                <a href="#" class="text-dark font-weight-semibold">
+              <div class="col-6 col-sm-6 col-md-6 col-lg-6 mb-4">
+                <a href="#" class="text-dark">
                   <img src="assets/img/bg/1.jpg" alt="" class="img-fluid mb-2">
-                  <span>Kegiatan Ibu Rumah Tangga yang Ternyata Bisa Bikin Kaya</span>
+                  <span class="font-weight-semibold">Kegiatan Ibu Rumah Tangga yang Ternyata Bisa Bikin Kaya</span>
                 </a>
               </div>
             </div>
@@ -409,6 +462,10 @@
   <script src="assets/vendor/js/bootstrap.js"></script>
 
   <!-- Libs -->
-  <script src="assets/vendor/libs/bootstrap-select/bootstrap-select.js"></script>
+  <script src="assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.js"></script>
+  <script src="assets/vendor/libs/bootstrap-select/bootstrap-select.js"></script>  
+
+  <!-- Page -->
+  <script src="assets/js/portal.js"></script>
 </body>
 </html>
