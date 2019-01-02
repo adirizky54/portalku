@@ -75,8 +75,6 @@ function displayWindowSize() {
   }  
 }
 
-new PerfectScrollbar(document.getElementById('navbar-top'));
-
 $('.navbar-search-input > input').on('focus', function() {
   $('.navbar-search-box').addClass('active');
 });
