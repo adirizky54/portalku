@@ -204,3 +204,25 @@ body {
     width: 925px;
   }
 }
+
+#title-slide {
+  font-size:1.3rem;
+}
+
+@media (min-width: 576px){
+  #title-slide {
+    font-size:1.1rem;
+  }
+}
+
+@media (min-width: 768px){
+  #title-slide {
+    font-size:1.3rem;
+  }
+}
+
+@media (min-width: 992px){
+  #title-slide {
+    font-size:1.4rem;
+  }
+}
