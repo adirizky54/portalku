@@ -16,7 +16,7 @@ $(function() {
       if (height !== curSubnavHeight) {
         curSubnavHeight = height;
         $subnavWrapper.height(height);
-        $subnav.css('top', (-1 * height) - 116);
+        $subnav.css('top', (-1 * height) - 1);
       }
     }
   
@@ -33,6 +33,7 @@ $(function() {
       var fixBottomPoint = fixTopPoint + curSubnavHeight;
       var scrollTop = $(document).scrollTop();
   
+      // alert(fixTopPoint);
       if (!$subnav.hasClass('subnav-fixed')) {
         if (scrollTop > fixBottomPoint) {
           $subnav.addClass('subnav-fixed');
