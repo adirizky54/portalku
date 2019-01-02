@@ -84,12 +84,11 @@ $('.navbar-search-cancel').on('click', function(e) {
   $('.navbar-search-box').removeClass('active');
 });
 
-$('#news-trending').inewsticker({
-  speed       : 5000,
-  effect      : 'slide',
-  dir         : 'ltr',
-  delay_after : 5000		
+$('.trending-post').easyTicker({
+  visible: 1,
+  interval: 5000
 });
+
 var swiperbanner = new Swiper('#swiper-artikel', {
   loop: true,
   autoplay: {
@@ -100,6 +99,7 @@ var swiperbanner = new Swiper('#swiper-artikel', {
     prevEl: '.swiper-button-prev'
   }
 });
+
 $('#wrapper').SocialCounter({
   //Get Usernames
   facebook_user: 'envato',
