@@ -128,7 +128,26 @@
   <div class="container mt-4">
     <div class="row mb-4">
       <div class="col-lg-12">
-        <div class="bg-white rounded d-flex align-items-center">
+        <div class="trending-post">
+          <ul class="ml-2">
+            <li class="text-truncate">
+              <a href="detail-berita.html" class="text-dark font-weight-semibold">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id minus earum officiis deleniti neque
+              </a>
+            </li>
+            <li class="text-truncate">
+              <a href="detail-berita.html" class="text-dark font-weight-semibold">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea nihil, laboriosam quam ut libero aliquam fuga? Blanditiis reprehenderit deserunt, perferendis voluptatum optio ratione ab, tempora dolor quasi, officiis ipsa! Facere.
+              </a>
+            </li>
+            <li class="text-truncate">
+              <a href="detail-berita.html" class="text-dark font-weight-semibold">
+                Dongkrak Kinerja Karyawan Agar Menjadi Produktif dan Loyal
+              </a>
+            </li>
+          </ul>
+        </div>
+        <!-- <div class="bg-white rounded d-flex align-items-center">
           <div class="p-2 px-3 bg-blue text-white font-weight-semibold rounded-left">Trending Now</div>
           <div class="ml-3">
             <ul class="list-unstyled m-0" id="news-trending">
@@ -143,7 +162,7 @@
               </li>
             </ul>
           </div>          
-        </div>
+        </div> -->
       </div>
     </div>
     <div class="row mb-4">
@@ -604,7 +623,8 @@
   <script src="assets/vendor/js/bootstrap.js"></script>
 
   <!-- Libs -->
-  <script src="assets/vendor/libs/minimal-ticker/inewsticker.js"></script>
+  <!-- <script src="assets/vendor/libs/minimal-ticker/inewsticker.js"></script> -->
+  <script src="assets/vendor/libs/jquery-easy-ticker/jquery.easy-ticker.min.js"></script>
   <script src="assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.js"></script>
   <script src="assets/vendor/libs/swiper/swiper.js"></script>
   <script src="https://socialcounters.000webhostapp.com/SocialCounters/SocialCounters/js/api.js"></script>
@@ -613,6 +633,10 @@
   <script src="assets/js/portal.js"></script>
   <script>
     new PerfectScrollbar(document.getElementById('navbar-top'));
+    $('.trending-post').easyTicker({
+        visible: 1,
+        interval: 5000
+    });
   </script>
 </body>
 </html>

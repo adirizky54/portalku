@@ -139,3 +139,68 @@ body {
     font-size: 1.12rem;
   }
 }
+
+.trending-post {
+  border: 1px solid #dc2f2f;
+  position: relative;
+  padding: 0 0 0 80px;
+  border-radius: 3px;
+}
+
+.trending-post:before {
+  content: "Trending Now";
+  display: inline-block;
+  font-style: normal;
+  background: #dc2f2f;
+  padding: 10px;
+  color: #FFF;
+  font-weight: bold;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.trending-post:after {
+  content: '';
+  display: block;
+  top: 0;
+  left: 80px;
+  background: #fff;
+  height: 20px;
+}
+
+.trending-post ul li {
+  list-style: none;
+  padding: 10px 0;
+  width: 200px;
+}
+
+@media (min-width: 425px){
+  .trending-post ul li {
+    width: 245px;
+  }
+}
+
+@media (min-width: 576px){
+  .trending-post ul li {
+    width: 360px;
+  }
+}
+
+@media (min-width: 768px){
+  .trending-post ul li {
+    width: 538px;
+  }
+}
+
+@media (min-width: 992px){
+  .trending-post ul li {
+    width: 745px;
+  }
+}
+
+@media (min-width: 1200px){
+  .trending-post ul li {
+    width: 925px;
+  }
+}
