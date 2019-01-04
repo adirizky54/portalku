@@ -10,7 +10,7 @@ body {
 
 @media (min-width: 576px){
   .header-brand-img {
-    height: 3rem;
+    height: 2.7rem;
   }  
 }
 
@@ -225,4 +225,9 @@ body {
   #title-slide {
     font-size:1.4rem;
   }
+}
+
+.scroll-to-fixed-fixed {
+  -webkit-box-shadow: 0 0.125rem 0.25rem rgba(24,28,33,0.075) !important;
+          box-shadow: 0 0.125rem 0.25rem rgba(24,28,33,0.075) !important;
 }
