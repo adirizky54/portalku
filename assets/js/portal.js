@@ -1,11 +1,7 @@
-window.onresize = displayWindowSize;
-window.onload = displayWindowSize;
+window.onresize = displayPortal;
+window.onload = displayPortal;
 
-$('#portal-nav').scrollToFixed({
-  maxWidth: 767
-});
-
-function displayWindowSize() {
+function displayPortal() {
   myWidth = window.innerWidth;
   if(myWidth <= 767) {
     $(window).scroll(function() {
@@ -16,8 +12,14 @@ function displayWindowSize() {
         $('#top-banner').removeClass('d-none').addClass('d-block');
       }
     });
-  } else {}
+  } else if (myWidth >= 768) {
+    $("#header-search").modal("hide");
+  }
 }
+
+$('#portal-nav').scrollToFixed({
+  maxWidth: 767
+});
 
 $('#portal-subnav-wrapper').scrollToFixed({
   minWidth: 768,
@@ -26,6 +28,9 @@ $('#portal-subnav-wrapper').scrollToFixed({
   postFixed: function() { $(this).find('#logo-image').removeClass('d-block').addClass('d-none'); },
   unfixed: function() { $(this).find('#logo-image').removeClass('d-block').addClass('d-none'); },
 });
+
+var divSearch = $('#search-berita').prop('outerHTML');
+$("#modal-search").append(divSearch);
 
 $('.trending-post').easyTicker({
   visible: 1,
